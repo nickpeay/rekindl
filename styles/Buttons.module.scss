@@ -1,0 +1,11 @@
+@import 'variables';
+
+.button {
+  display: flex;
+  width: 200px;
+  height: auto;
+  padding: 16px 0;
+  border-radius: 12px;
+  background-color: $rose;
+  color: white;
+}
