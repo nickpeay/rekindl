@@ -21,12 +21,11 @@ const Home: NextPage = () => {
         </div> */}
         <Hero>
           <div>
-            <img src='/img/hero2.png' alt='' />
-            <img src='/img/hero.png' alt='' />
-            <img src='/img/hero2.png' alt='' />
-            <img src='/img/hero.png' alt='' />
-            <img src='/img/hero2.png' alt='' />
-            <img src='/img/hero.png' alt='' />
+            <img src='/img/hero1.jpg' alt='' />
+            <img src='/img/hero2.jpg' alt='' />
+            <img src='/img/hero3.jpg' alt='' />
+            <img src='/img/hero4.jpg' alt='' />
+            <img src='/img/hero5.jpg' alt='' />
           </div>
         </Hero>
         <h1>
