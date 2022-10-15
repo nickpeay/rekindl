@@ -16,9 +16,19 @@ const Home: NextPage = () => {
       </Head>
 
       <div className={styles.hero}>
-        <div className={styles.bgImage}>
+        {/* <div className={styles.bgImage}>
           <img src='/img/hero.png' alt='Rekindl21' />
-        </div>
+        </div> */}
+        <Hero>
+          <div>
+            <img src='/img/hero2.png' alt='' />
+            <img src='/img/hero.png' alt='' />
+            <img src='/img/hero2.png' alt='' />
+            <img src='/img/hero.png' alt='' />
+            <img src='/img/hero2.png' alt='' />
+            <img src='/img/hero.png' alt='' />
+          </div>
+        </Hero>
         <h1>
           Enrich your life by
           <br />
@@ -32,17 +42,6 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.hero2}></div>
-
-      <div>
-        <Hero>
-          <img src='/img/hero2.png' alt='' />
-          <img src='/img/hero.png' alt='' />
-          <img src='/img/hero2.png' alt='' />
-          <img src='/img/hero.png' alt='' />
-          <img src='/img/hero2.png' alt='' />
-          <img src='/img/hero.png' alt='' />
-        </Hero>
-      </div>
     </div>
   );
 };
