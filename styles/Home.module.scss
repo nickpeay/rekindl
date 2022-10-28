@@ -168,6 +168,42 @@
   }
 }
 
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  flex: 1;
+  padding: 2rem;
+  background-color: $base;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    display: block;
+    height: 250px;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+      list-style: none;
+      padding: 0 10px;
+
+      a {
+        display: block;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: $wine;
+        }
+      }
+    }
+  }
+}
+
 .title a {
   color: $wine;
   text-decoration: none;

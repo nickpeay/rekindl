@@ -9,6 +9,23 @@ const Footer: NextComponentType = () => {
       <Link href='/'>
         <img src='/img/logo.png' alt='' />
       </Link>
+      <ul className={styles.footerNav}>
+        <li>
+          <Link href='about'>
+            <a>About</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='contact'>
+            <a>Contact</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='login'>
+            <a>Sign In</a>
+          </Link>
+        </li>
+      </ul>
     </footer>
   );
 };
