@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Button from '../components/ui/button';
 import Hero from '../components/ui/hero';
 import styles from '../styles/Home.module.scss';
+import Footer from '../components/ui/footer';
 
 const Home: NextPage = () => {
   return (
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
 
       <div className={styles.contact}>
         <div>
+          <h3>Contact Us</h3>
           <form action=''>
             <input type='text' placeholder='Name' />
             <input type='email' placeholder='Email' />
@@ -83,6 +85,7 @@ const Home: NextPage = () => {
               cols={30}
               rows={10}
               placeholder='Message'></textarea>
+            <Button>Submit</Button>
           </form>
         </div>
         <div></div>
