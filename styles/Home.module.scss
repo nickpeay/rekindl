@@ -61,11 +61,57 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: $rose;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 8rem;
+  overflow: hidden;
+  background-color: $base;
   background-image: url('../public/img/hero2.png');
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
+
+  div {
+    flex: 0 1 50%;
+
+    h2 {
+      color: $wine;
+      font-size: 2.5rem;
+      z-index: 1;
+      text-shadow: 3px 3px 8px rgb(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.hero3 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 2rem 8rem;
+  overflow: hidden;
+  background-color: $base;
+  background-image: url('../public/img/hero-2.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+    z-index: 1;
+    text-shadow: 3px 3px 8px rgb(0, 0, 0, 0.2);
+  }
+
+  button {
+    background-color: white;
+    color: $wine;
+  }
 }
 
 .footer {

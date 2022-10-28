@@ -35,12 +35,58 @@ const Home: NextPage = () => {
         </h1>
         <Button>
           <Link href='about'>
-            <a>Start Here</a>
+            <a>Start here</a>
           </Link>
         </Button>
       </div>
 
-      <div className={styles.hero2}></div>
+      <div className={styles.hero2}>
+        <div></div>
+        <div>
+          <h2>
+            In just 21 days,
+            <br />
+            make connecting a habit.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            sit amet erat porttitor, eleifend odio auctor, gravida tellus. Nunc
+            sollicitudin ex odio, vitae pulvinar nulla suscipit vitae.
+            Suspendisse et rutrum mi. Pellentesque rutrum ac dolor ut porta.
+            Quisque et mollis purus. Duis semper porttitor finibus.
+          </p>
+          <Button>
+            <Link href='about'>
+              <a>Learn how</a>
+            </Link>
+          </Button>
+        </div>
+      </div>
+
+      <div className={styles.hero3}>
+        <h2>Form a deeper connection with Rekindl21.</h2>
+        <Button>
+          <Link href='about'>
+            <a>Start now</a>
+          </Link>
+        </Button>
+      </div>
+
+      <div className={styles.contact}>
+        <div>
+          <form action=''>
+            <input type='text' placeholder='Name' />
+            <input type='email' placeholder='Email' />
+            <textarea
+              name='Message'
+              id=''
+              cols={30}
+              rows={10}
+              placeholder='Message'></textarea>
+          </form>
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 };
