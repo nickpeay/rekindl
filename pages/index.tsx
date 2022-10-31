@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Button from '../components/ui/button';
 import Hero from '../components/ui/hero';
 import styles from '../styles/Home.module.scss';
-import Footer from '../components/ui/footer';
 
 const Home: NextPage = () => {
   return (
