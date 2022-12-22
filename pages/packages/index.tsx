@@ -1,6 +1,10 @@
 import { NextPage } from 'next';
 import clientPromise from '../../lib/mongodb';
 
+import Card from '../../components/ui/card';
+
+import styles from './Packages.module.scss';
+
 interface rekidl21Package {
   _id: string;
   title: string;
@@ -8,20 +12,23 @@ interface rekidl21Package {
   cost: number;
 }
 
-const Packages: NextPage = ({ packages }) => {
+const Packages: NextPage = ({ packages }: any) => {
   return (
-    <div>
-      <h1>Packages</h1>
-      <div>
-        <ul>
-          {packages.map((pack: rekidl21Package) => (
-            <li key={pack._id}>
-              <h2>{pack.title}</h2>
-              <h3>{pack.description}</h3>
-              <p>Cost: ${pack.cost}</p>
-            </li>
-          ))}
-        </ul>
+    <div className='container'>
+      <div className='row'>
+        <section className={styles.section}>
+          <h1>Rekindl21 Packages</h1>
+          <div>
+            <div>
+              {packages.map((pack: rekidl21Package) => (
+                // <li key={pack._id}>
+
+                // </li>
+                <Card id={pack._id} pack={pack} />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
